@@ -19,3 +19,27 @@ export interface HeroData extends SanityBody {
   profilePicture: Image
   role: string
 }
+
+export interface Skill extends SanityBody {
+  _type: 'skill'
+  title: string
+  progress: string
+  image: Image
+}
+
+export interface Technology extends SanityBody {
+  _type: 'skill'
+  title: string
+  progress: string
+  image: Image
+}
+
+export interface WorkExperience extends SanityBody {
+  _type: 'workExperience'
+  position: string
+  companyName: string
+  startDate: date
+  endDate: date
+  currentlyWorkingHere: boolean
+  technologies: Technology[]
+}

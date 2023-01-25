@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --purple: rgb(123, 31, 163);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+    --star-left: 0;
+    --star-right: 0;
+  }
+}
 @layer components {
   .heroButton {
-    @apply px-6 py-2 border-[#242424] rounded-full uppercase 
-    text-xs tracking-widest text-gray-500 
-    transition-all hover:border-[#F7AB0A] hover:text-[#F7AB0A]/40;
+    @apply px-6 py-2 uppercase text-xs tracking-widest text-gray-500 
+    transition-all hover:text-[#0B837F];
   }
 
   .contactInput {

@@ -7,13 +7,16 @@ import ArticleIcon from '@mui/icons-material/Article'
 import Link from 'next/link'
 
 type Props = {}
-const socialIconsDimension = { height: 40, width: 40 }
+const socialIconsDimension = {
+  height: 40,
+  width: 40,
+}
 
-const gray300TailwindColor = '#F2F4F3'
+const gray300TailwindColor = 'rgb(107 114 128 / var(--tw-text-opacity))'
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky p-5 top-0 flex flex-row items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky p-7 top-0 flex flex-row items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -35,7 +38,7 @@ export default function Header({}: Props) {
         {/* Social Icons - from react social icons*/}
         {/* LinkedIn */}
         <SocialIcon
-          className="mr-2"
+          className="mr-2 hover:text-[#0B837F]"
           style={socialIconsDimension}
           url="https://www.linkedin.com/in/anshuman-mander-7b3137193/"
           target="_blank"
@@ -79,10 +82,12 @@ export default function Header({}: Props) {
           stiffness: 200,
           damping: 15,
         }}
-        className="flex flex-row items-center text-[#F2F4F3] cursor-pointer"
+        className="flex flex-row items-center text-gray-500 group hover:text-[#0B837F] cursor-pointer"
       >
         <ArticleIcon className="cursor-pointer mr-2" />
-        <p className="uppercase hidden md:inline-flex text-xs">resume</p>
+        <p className="uppercase hidden md:inline-flex text-xs text-gray-500 group-hover:text-[#0B837F]">
+          resume
+        </p>
       </motion.div>
     </header>
   )
