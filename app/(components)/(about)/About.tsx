@@ -4,6 +4,11 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import MagicalText from '../(magicalText)/magicalText'
 
+import TabsUnstyled from '@mui/base/TabsUnstyled'
+import TabsListUnstyled from '@mui/base/TabsListUnstyled'
+import TabPanelUnstyled from '@mui/base/TabPanelUnstyled'
+import TabUnstyled from '@mui/base/TabUnstyled'
+
 type Props = {}
 
 export default function About({}: Props) {
@@ -16,7 +21,7 @@ export default function About({}: Props) {
       className="h-screen max-w-7xl flex flex-col justify-evenly items-center relative
     text-center md:text-left md:flex-row mx-auto"
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-[50%] left-0 rotate-[270deg] uppercase tracking-[20px] text-[var(--text-secondary)] text-2xl">
         About
       </h3>
       <motion.img
@@ -33,10 +38,28 @@ export default function About({}: Props) {
         <h4 className="text-2xl font-semibold uppercase">
           <MagicalText text="a little about me !!" />
         </h4>
-        <p className="text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at
-          quisquam necessitatibus reiciendis ipsa laudantium error, ipsam
-        </p>
+        <TabsUnstyled defaultValue={0} className="">
+          <TabsListUnstyled className="rounded-sm border-b-2 border-[var(--secondary)]">
+            <TabUnstyled className="mt-1 py-1 px-3 rounded-t-sm focus:bg-[var(--secondary)] focus:text-[var(--text-primary)] text-[var(--text-secondary)]">
+              Personal
+            </TabUnstyled>
+            <TabUnstyled className="mt-1 py-1 px-3 rounded-t-sm focus:bg-[var(--secondary)] focus:text-[var(--text-primary)] text-[var(--text-secondary)]">
+              Professional
+            </TabUnstyled>
+          </TabsListUnstyled>
+          <TabPanelUnstyled
+            value={0}
+            className="my-1 py-1 px-3 text-[var(--text-secondary)]"
+          >
+            Something about my personal life lalalalala...........
+          </TabPanelUnstyled>
+          <TabPanelUnstyled
+            value={1}
+            className="my-1 py-1 px-3 text-[var(--text-secondary)]"
+          >
+            Something about my professional life lalalalala...........
+          </TabPanelUnstyled>
+        </TabsUnstyled>
       </div>
     </motion.div>
   )

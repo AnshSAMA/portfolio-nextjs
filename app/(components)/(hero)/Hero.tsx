@@ -13,8 +13,8 @@ export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
       `Hi, call me Anshy`,
-      'I like to design experiences',
-      '<ButLoveToCodeMore />',
+      'Or-the-programming-jedi.tsx',
+      "I'm just a problem solving hero 🦸‍♂️",
     ],
     loop: true,
     delaySpeed: 2000,
@@ -22,23 +22,21 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      {/* <img src="" /> */}
       <div className="relative">
         <Image
           className="h-28 w-28 rounded-full mx-auto object-cover"
           src={HeroImg}
           alt="Hero Image"
-          // fill={true}
           style={{ objectFit: 'contain' }}
         />
       </div>
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">
+        <h2 className="text-sm uppercase text-[var(--text-primary)] pb-2 tracking-[10px]">
           Software Engineer
         </h2>
-        <h1 className="text-3xl md:text-4xl font-semibold px-10 text-gray-300">
+        <h1 className="text-3xl md:text-4xl font-semibold px-10 text-[var(--text-primary)]">
           <span>{text}</span>
-          <Cursor cursorColor="#39297A"></Cursor>
+          <Cursor cursorColor="var(--primary)"></Cursor>
         </h1>
         <div className="pt-5">
           <Link href="#about">

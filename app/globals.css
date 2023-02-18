@@ -9,11 +9,19 @@
     --pink: rgb(244, 143, 177);
     --star-left: 0;
     --star-right: 0;
+
+    --background: #0b2027;
+    --primary: #70a9a1;
+    --secondary: #40798c;
+
+    --text-primary: #b3efb2;
+    --text-secondary: #70a9a1;
+    --text-hover: #70a9a1;
   }
 }
 @layer components {
   .heroButton {
-    @apply px-6 py-2 uppercase text-xs tracking-widest text-gray-500 
+    @apply px-6 py-2 uppercase text-xs tracking-widest text-[var(--text-primary)] 
     transition-all hover:text-[#0B837F];
   }
 

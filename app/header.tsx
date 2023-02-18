@@ -12,7 +12,7 @@ const socialIconsDimension = {
   width: 40,
 }
 
-const gray300TailwindColor = 'rgb(107 114 128 / var(--tw-text-opacity))'
+const textColor = 'var(--text-primary)'
 
 export default function Header({}: Props) {
   return (
@@ -42,7 +42,7 @@ export default function Header({}: Props) {
           style={socialIconsDimension}
           url="https://www.linkedin.com/in/anshuman-mander-7b3137193/"
           target="_blank"
-          fgColor={gray300TailwindColor}
+          fgColor={textColor}
           bgColor="transparent"
         />
         {/* Github */}
@@ -51,7 +51,7 @@ export default function Header({}: Props) {
           style={socialIconsDimension}
           url="https://github.com/AnshSAMA?tab=repositories"
           target="_blank"
-          fgColor={gray300TailwindColor}
+          fgColor={textColor}
           bgColor="transparent"
         />
         {/* Email */}
@@ -61,7 +61,7 @@ export default function Header({}: Props) {
           style={socialIconsDimension}
           network="email"
           url="#contact"
-          fgColor={gray300TailwindColor}
+          fgColor={textColor}
           bgColor="transparent"
         />
       </motion.div>
@@ -82,10 +82,10 @@ export default function Header({}: Props) {
           stiffness: 200,
           damping: 15,
         }}
-        className="flex flex-row items-center text-gray-500 group hover:text-[#0B837F] cursor-pointer"
+        className="flex flex-row items-center text-[var(--text-primary)] group ghover:text-[#0B837F] cursor-pointer"
       >
         <ArticleIcon className="cursor-pointer mr-2" />
-        <p className="uppercase hidden md:inline-flex text-xs text-gray-500 group-hover:text-[#0B837F]">
+        <p className="uppercase hidden md:inline-flex text-xs text-[var(--text-primary)] gggroup-hover:text-[#0B837F]">
           resume
         </p>
       </motion.div>

@@ -10,7 +10,7 @@ export default function MagicalText({ text }: Props) {
       <MagicStar interval={1100} />
       <MagicStar interval={1200} />
       <MagicStar interval={1300} />
-      <span className="magic-text">{text}</span>
+      <p className="magic-text">{text}</p>
     </span>
   )
 }
