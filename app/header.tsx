@@ -1,10 +1,15 @@
 'use client'
 
 import React from 'react'
-import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
-import ArticleIcon from '@mui/icons-material/Article'
 import Link from 'next/link'
+
+import {
+  AiFillLinkedin,
+  AiOutlineGithub,
+  AiFillMail,
+  AiFillFileText,
+} from 'react-icons/ai'
 
 type Props = {}
 const socialIconsDimension = {
@@ -12,11 +17,9 @@ const socialIconsDimension = {
   width: 40,
 }
 
-const textColor = 'var(--text-primary)'
-
 export default function Header({}: Props) {
   return (
-    <header className="sticky p-7 top-0 flex flex-row items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="flex w-full flex-row items-start justify-between p-7 xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -31,39 +34,32 @@ export default function Header({}: Props) {
         transition={{
           type: 'spring',
           stiffness: 200,
-          damping: 15,
+          damping: 30,
         }}
         className="flex flex-row items-center"
       >
-        {/* Social Icons - from react social icons*/}
         {/* LinkedIn */}
-        <SocialIcon
-          className="mr-2 hover:text-[#0B837F]"
-          style={socialIconsDimension}
-          url="https://www.linkedin.com/in/anshuman-mander-7b3137193/"
-          target="_blank"
-          fgColor={textColor}
-          bgColor="transparent"
-        />
-        {/* Github */}
-        <SocialIcon
-          className="mr-2"
-          style={socialIconsDimension}
-          url="https://github.com/AnshSAMA?tab=repositories"
-          target="_blank"
-          fgColor={textColor}
-          bgColor="transparent"
-        />
-        {/* Email */}
+        <Link href="https://www.linkedin.com/in/anshuman-mander-7b3137193/">
+          <AiFillLinkedin
+            className="mr-3 text-[var(--primary)] hover:text-[var(--secondary)]"
+            size={25}
+          />
+        </Link>
 
-        <SocialIcon
-          className="cursor-pointer"
-          style={socialIconsDimension}
-          network="email"
-          url="#contact"
-          fgColor={textColor}
-          bgColor="transparent"
-        />
+        {/* Github */}
+        <Link href="https://github.com/AnshSAMA?tab=repositories">
+          <AiOutlineGithub
+            className="mr-3 text-[var(--primary)] hover:text-[var(--secondary)]"
+            size={25}
+          />
+        </Link>
+        {/* Email */}
+        <Link href="#contact">
+          <AiFillMail
+            className="text-[var(--primary)] hover:text-[var(--secondary)]"
+            size={25}
+          />
+        </Link>
       </motion.div>
       {/* resume */}
       <motion.div
@@ -80,14 +76,20 @@ export default function Header({}: Props) {
         transition={{
           type: 'spring',
           stiffness: 200,
-          damping: 15,
+          damping: 30,
         }}
-        className="flex flex-row items-center text-[var(--text-primary)] group ghover:text-[#0B837F] cursor-pointer"
+        className="group flex cursor-pointer flex-row items-center text-[var(--primary)] hover:text-[#fff]"
       >
-        <ArticleIcon className="cursor-pointer mr-2" />
-        <p className="uppercase hidden md:inline-flex text-xs text-[var(--text-primary)] gggroup-hover:text-[#0B837F]">
-          resume
-        </p>
+        {/* Resume Document */}
+        <Link href="#" className="flex flex-row items-center">
+          <AiFillFileText
+            className="mr-3 text-[var(--primary)] group-hover:text-[var(--secondary)]"
+            size={25}
+          />
+          <p className="hidden text-xs uppercase text-[var(--primary)] group-hover:text-[var(--secondary)] md:inline-flex">
+            resume
+          </p>
+        </Link>
       </motion.div>
     </header>
   )

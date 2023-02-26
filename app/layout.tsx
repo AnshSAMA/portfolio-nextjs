@@ -9,11 +9,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className="scroll-p-0">
+      <body className="mx-auto max-w-7xl">
         <div
-          className="z-0 bg-[var(--background)] text-white h-screen snap-y snap-mandatory 
-        overflow-x-hidden
-        scrollbar scrollbar-track-[#0b2027]/50 scrollbar-thumb-[#040E10]"
+          className="h-screen bg-[var(--background)] text-white
+        scrollbar overflow-x-hidden scrollbar-track-[#111010]/20 scrollbar-thumb-[#fe5d26]"
         >
           <Header />
           {children}

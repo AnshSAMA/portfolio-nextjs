@@ -20,19 +20,19 @@ export default function Contact({}: Props) {
 
   return (
     <div
-      className="h-screen relative flex flex-col justify-center items-center
-      text-center md:text-left xl:flex-row max-w-7xl xl:space-y-0 mx-auto"
+      className="relative mx-auto flex h-screen max-w-7xl flex-col
+      items-center justify-center text-center md:text-left xl:flex-row xl:space-y-0"
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-20 text-2xl uppercase tracking-[20px] text-gray-500">
         Contact
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-2xl font-semibold text-center">
+        <h4 className="text-center text-2xl font-semibold">
           I have got just what you need, let&apos;s talk!!
         </h4>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col w-fit mx-auto space-y-2"
+          className="mx-auto flex w-fit flex-col space-y-2"
         >
           <div className="flex space-x-2">
             <input
@@ -61,7 +61,7 @@ export default function Contact({}: Props) {
           ></textarea>
           <button
             type="submit"
-            className="bg-[#08605F] py-5 rounded-sm text-gray-300 font-bold"
+            className="rounded-sm bg-[#08605F] py-5 font-bold text-gray-300"
           >
             {' '}
             Submit
