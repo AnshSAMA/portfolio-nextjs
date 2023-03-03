@@ -1,13 +1,10 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import Hero from './(components)/(hero)/Hero'
-import About from './(components)/(about)/About'
-import WorkExperience from './(components)/(experience)/WorkExperience'
-import Skills from './(components)/(skills)/Skills'
-import Projects from './(components)/(projects)/Projects'
-import Contact from './(components)/(contact)/Contact'
-
-const inter = Inter({ subsets: ['latin'] })
+// import About from './about/page'
+// import WorkExperience from './experience/page'
+// import WorkExperience from './(components)/experience/page'
+// import Skills from './(components)/(skills)/Skills'
+// import Projects from './(components)/(projects)/Projects'
+// import Contact from './(components)/(contact)/Contact'
 
 export default function Home() {
   return (
@@ -16,25 +13,25 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="about" className="snap-center">
+      {/* <section id="about" className="snap-center">
         <About />
       </section>
 
       <section id="experience" className="snap-start">
         <WorkExperience />
-      </section>
+      </section> */}
 
-      <section id="skills" className="snap-start">
+      {/* <section id="skills" className="snap-start">
         <Skills />
-      </section>
+      </section> */}
 
-      <section id="projects" className="snap-center">
+      {/* <section id="projects" className="snap-center">
         <Projects />
-      </section>
+      </section> */}
 
-      <section id="contact" className="snap-center">
+      {/* <section id="contact" className="snap-center">
         <Contact />
-      </section>
+      </section> */}
     </main>
   )
 }

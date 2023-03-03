@@ -7,14 +7,14 @@ type Props = {}
 export default function WorkExperience({}: Props) {
   return (
     <div
-      className="min-h-screen relative text-left max-w-7xl overflow-hidden px-10 pt-28 mx-auto
-    flex flex-col items-center md:flex-row justify-evenly"
+      className="relative mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-evenly
+    overflow-hidden px-10 pt-28 text-left md:flex-row"
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-20 text-2xl uppercase tracking-[20px] text-gray-500">
         Experience
       </h3>
       <div
-        className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory
+        className="flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll p-10
       scrollbar scrollbar-track-[#39297A]/50 scrollbar-thumb-[#0C0818]"
       >
         {/* Experience Card */}

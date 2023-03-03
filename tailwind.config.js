@@ -6,7 +6,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        serif: ['var(--font-bodyfont)'],
+      },
+    },
   },
   plugins: [
     // Tailwind Scrollbar
