@@ -17,12 +17,12 @@ export default function About({}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: [0, 0, 0, 0, 0.2, 0.4, 1] }}
       transition={{ duration: 0.5 }}
       className="flex flex-col gap-12"
     >
       <Navbar active="about" />
-      <div className="relative flex h-full flex-col-reverse items-center justify-center gap-y-12 md:flex-row md:gap-x-24 2xl:flex-col">
+      <div className="relative flex flex-col-reverse items-center justify-evenly gap-y-12 md:flex-row">
         <div className="flex max-w-md flex-col items-center gap-y-3 px-10 md:max-w-sm md:items-start md:px-0 2xl:max-w-4xl 2xl:items-center">
           <div className="w-fit text-lg font-light text-[var(--secondary)]">
             <h2>
@@ -46,16 +46,16 @@ export default function About({}: Props) {
             &quot;Rule #32: Enjoy the little things&quot;
           </p>
         </div>
-        <div className="group relative w-32 md:w-64">
+        <div className="group relative row-start-1 w-32 md:row-auto md:w-64">
           <Image
             src={AboutImgOne}
             alt="Some cool pics of me!!"
-            className="absolute aspect-[5/7] translate-y-[5%] translate-x-[40%] rotate-12 rounded-lg object-cover transition-transform duration-700 group-hover:translate-y-[5%] group-hover:translate-x-[40%] group-hover:rotate-12 md:translate-y-0 md:translate-x-[10%] md:rotate-6"
+            className="absolute aspect-[5/7] translate-y-[5%] translate-x-[40%] rotate-12 rounded-lg object-cover transition-transform duration-700 group-hover:translate-y-[5%] group-hover:translate-x-[40%] group-hover:rotate-12 md:translate-y-0 md:translate-x-[7%] md:rotate-6"
           />
           <Image
             src={AboutImgThree}
             alt="Some cool pics of me!!"
-            className="absolute aspect-[5/7] translate-y-[5%] translate-x-[-40%] -rotate-12 rounded-lg object-cover transition-transform duration-700 group-hover:translate-y-[5%] group-hover:translate-x-[-40%] group-hover:-rotate-12 md:translate-y-0 md:translate-x-[-10%] md:-rotate-3"
+            className="absolute aspect-[5/7] translate-y-[5%] translate-x-[-40%] -rotate-12 rounded-lg object-cover transition-transform duration-700 group-hover:translate-y-[5%] group-hover:translate-x-[-40%] group-hover:-rotate-12 md:translate-y-0 md:translate-x-[-7%] md:-rotate-3"
           />
           <Image
             src={AboutImgTwo}
