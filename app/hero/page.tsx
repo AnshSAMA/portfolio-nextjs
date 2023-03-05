@@ -1,14 +1,15 @@
 import React from 'react'
 import BackgroundCircles from './BackgroundCircles'
 import Image from 'next/image'
-import HeroImg from './hero-img.jpg'
-import MagicalText from '../(magicalText)/magicalText'
+import HeroImg from '/public/hero-img.jpg'
+
 import TypeWriterText from './TypeWriterText'
-import Navbar from '../../navbar'
+import Navbar from '../navbar'
+import MagicalText from '../(components)/(magicalText)/magicalText'
 
 type Props = {}
 const typewriterWords = [
-  `Hi, call me Anshy`,
+  `Hi, call me Anshy!`,
   'Or-the-programming-jedi.tsx ⚔️',
   '<ImJustAProblemSolvingHero 🦸‍♂️ />',
 ]

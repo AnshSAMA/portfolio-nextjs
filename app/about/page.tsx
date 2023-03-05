@@ -8,7 +8,6 @@ import AboutImgTwo from './about-2.jpg'
 import AboutImgThree from './about-3.jpg'
 import Skills from './(skills)/Skills'
 import { motion } from 'framer-motion'
-import Interests from './interests'
 import Navbar from '../navbar'
 
 type Props = {}

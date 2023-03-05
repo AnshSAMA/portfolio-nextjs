@@ -3,12 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import {
-  AiFillLinkedin,
-  AiOutlineGithub,
-  AiFillMail,
-  AiFillFileText,
-} from 'react-icons/ai'
+import { AiFillLinkedin, AiOutlineGithub, AiFillFileText } from 'react-icons/ai'
 
 type Props = {}
 

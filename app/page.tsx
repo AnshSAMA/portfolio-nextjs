@@ -1,11 +1,9 @@
-import Hero from './(components)/(hero)/Hero'
+import Hero from './hero/page'
 
 export default function Home() {
   return (
     <main>
-      <section id="hero" className="snap-start">
-        <Hero />
-      </section>
+      <Hero />
     </main>
   )
 }

@@ -1,6 +1,8 @@
-import Navbar from '../navbar'
 import Interests from './interests'
-// import './globals.css'
+
+export const metadata = {
+  title: 'About Me',
+}
 
 export default function RootLayout({
   children,

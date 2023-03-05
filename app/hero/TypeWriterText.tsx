@@ -9,7 +9,7 @@ export default function TypeWriterText({ typewriterWords, className }: Props) {
   const [text, count] = useTypewriter({
     words: typewriterWords,
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 3000,
   })
   return <Typewriter words={typewriterWords} cursor={true} loop={true} />
 }

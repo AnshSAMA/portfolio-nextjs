@@ -1,19 +1,12 @@
 import './globals.css'
-import Contacts from './contacts'
+import Contacts from './socials'
 import { Poppins } from '@next/font/google'
-import { Neucha } from '@next/font/google'
 
 const bodyfont = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-bodyfont',
 })
-
-// const titlefont = Neucha({
-//   subsets: ['latin'],
-//   weight: [ '400'],
-//   variable: '--font-bodyfont',
-// })
 
 export const metadata = {
   title: "Anshy's World",
