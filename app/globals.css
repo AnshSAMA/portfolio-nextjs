@@ -15,11 +15,3 @@
     --secondary: #fe5d26;
   }
 }
-@layer components {
-  .contactInput {
-    @apply space-y-10 rounded-sm border-b border-[#242424] 
-    bg-slate-100/10 px-2 py-2 text-gray-500
-    placeholder-gray-500 outline-none transition-all
-    focus:border-[#08605F] focus:text-gray-300 hover:border-[#08605F];
-  }
-}
