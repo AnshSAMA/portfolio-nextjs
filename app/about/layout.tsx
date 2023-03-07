@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <main className="mb-6 md:mb-24">
+    <main>
       <Interests />
       {children}
     </main>

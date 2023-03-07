@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import BackgroundCircles from './BackgroundCircles'
 import Image from 'next/image'
@@ -6,6 +8,7 @@ import HeroImg from '/public/hero-img.jpg'
 import TypeWriterText from './TypeWriterText'
 import Navbar from '../navbar'
 import MagicalText from '../(components)/(magicalText)/magicalText'
+import { motion } from 'framer-motion'
 
 type Props = {}
 const typewriterWords = [
@@ -16,7 +19,7 @@ const typewriterWords = [
 
 export default function Hero({}: Props) {
   return (
-    <div className="flex h-screen flex-col items-center justify-center space-y-4 overflow-hidden text-center">
+    <motion.div className="flex min-h-screen flex-col items-center justify-center space-y-4 overflow-hidden text-center">
       <BackgroundCircles />
       <Image
         className="mx-auto h-28 w-28 rounded-full object-cover"
@@ -32,6 +35,6 @@ export default function Hero({}: Props) {
         <TypeWriterText typewriterWords={typewriterWords} />
       </h1>
       <Navbar active="" />
-    </div>
+    </motion.div>
   )
 }

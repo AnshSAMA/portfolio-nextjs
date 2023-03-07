@@ -23,7 +23,9 @@ export default function RootLayout({
         className={`${bodyfont.variable} bg-[var(--background)] font-serif text-[var(--primary)] 
         overflow-x-hidden scrollbar-thin scrollbar-track-[#111010]/20 scrollbar-thumb-[#fe5d26]`}
       >
-        <div className="relative mx-auto max-w-[1920px]">{children}</div>
+        <div className="relative mx-auto mb-6 max-w-[1920px] md:mb-24">
+          {children}
+        </div>
         <Contacts />
       </body>
     </html>

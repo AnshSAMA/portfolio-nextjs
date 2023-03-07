@@ -14,9 +14,9 @@ export default function Navbar({ active }: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: [0, 0, 0, 0, 0.2, 0.4, 1] }}
       transition={{ duration: 0.5 }}
-      className={` z-20 flex w-full justify-center gap-x-3 rounded-b-md ${
+      className={`z-20 flex w-full justify-center gap-x-3 rounded-b-md py-8 ${
         active === '' ? '' : 'bg-[var(--background)]'
-      } py-5`}
+      }`}
     >
       {links.map((link) => (
         <Link

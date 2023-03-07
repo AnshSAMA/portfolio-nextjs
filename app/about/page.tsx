@@ -3,9 +3,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-import AboutImgOne from './about-1.jpg'
-import AboutImgTwo from './about-2.jpg'
-import AboutImgThree from './about-3.jpg'
+import AboutImgOne from '/public/about-1.jpg'
+import AboutImgTwo from '/public/about-2.jpg'
+import AboutImgThree from '/public/about-3.jpg'
 import Skills from './(skills)/Skills'
 import { motion } from 'framer-motion'
 import Navbar from '../navbar'
@@ -22,7 +22,7 @@ export default function About({}: Props) {
     >
       <Navbar active="about" />
       <div className="relative flex flex-col-reverse items-center justify-evenly gap-y-12 md:flex-row">
-        <div className="flex max-w-md flex-col items-center gap-y-3 px-10 md:max-w-sm md:items-start md:px-0 2xl:max-w-4xl 2xl:items-center">
+        <div className="flex max-w-md flex-col items-center gap-y-3 px-10 md:max-w-sm md:items-start md:px-0">
           <div className="w-fit text-lg font-light text-[var(--secondary)]">
             <h2>
               a <span className="text-3xl font-bold">&quot;LITTLE&quot;</span>{' '}

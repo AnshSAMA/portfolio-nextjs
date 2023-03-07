@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Contact Info',
+  title: "Anshy's World",
 }
 
 export default function RootLayout({

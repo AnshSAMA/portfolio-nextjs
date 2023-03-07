@@ -2,8 +2,8 @@
 
 import React from 'react'
 import Link from 'next/link'
-
 import { AiFillLinkedin, AiOutlineGithub, AiFillFileText } from 'react-icons/ai'
+import { usePathname } from 'next/navigation'
 
 type Props = {}
 
@@ -54,6 +54,10 @@ const ContactLinks = () => {
 }
 
 export default function Contacts({}: Props) {
+  const pathname = usePathname()
+  // Don't show these Contacts for "Contacts" page
+  // Different styling is used for contacts shown there
+  if (pathname === '/contact') return null
   return (
     <div className="flex justify-between py-4 px-6 md:p-0">
       <ContactLinks />
