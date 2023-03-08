@@ -49,16 +49,22 @@ export default function About({}: Props) {
           <Image
             src={AboutImgOne}
             alt="Some cool pics of me!!"
+            priority
+            placeholder="blur"
             className="absolute aspect-[5/7] translate-y-[5%] translate-x-[40%] rotate-12 rounded-lg object-cover transition-transform duration-700 group-hover:translate-y-[5%] group-hover:translate-x-[40%] group-hover:rotate-12 md:translate-y-0 md:translate-x-[7%] md:rotate-6"
           />
           <Image
             src={AboutImgThree}
             alt="Some cool pics of me!!"
+            priority
+            placeholder="blur"
             className="absolute aspect-[5/7] translate-y-[5%] translate-x-[-40%] -rotate-12 rounded-lg object-cover transition-transform duration-700 group-hover:translate-y-[5%] group-hover:translate-x-[-40%] group-hover:-rotate-12 md:translate-y-0 md:translate-x-[-7%] md:-rotate-3"
           />
           <Image
             src={AboutImgTwo}
             alt="Some cool pics of me!!"
+            priority
+            placeholder="blur"
             className="relative top-0 z-10 aspect-[5/7] rounded-lg object-cover"
           />
         </div>

@@ -17,10 +17,7 @@ const ContactLinks = () => {
           href="https://www.linkedin.com/in/anshuman-mander-7b3137193/"
           target="_blank"
         >
-          <AiFillLinkedin
-            className="text-[var(--primary)] hover:text-[var(--secondary)]"
-            size={25}
-          />
+          <AiFillLinkedin className="h-6 w-6 text-[var(--primary)] hover:text-[var(--secondary)] md:h-7 md:w-7" />
         </Link>
 
         {/* Github */}
@@ -29,10 +26,7 @@ const ContactLinks = () => {
           href="https://github.com/AnshSAMA?tab=repositories"
           target="_blank"
         >
-          <AiOutlineGithub
-            className="text-[var(--primary)] hover:text-[var(--secondary)]"
-            size={25}
-          />
+          <AiOutlineGithub className="h-6 w-6 text-[var(--primary)] hover:text-[var(--secondary)] md:h-7 md:w-7" />
         </Link>
 
         {/* Resume Document */}
@@ -42,10 +36,7 @@ const ContactLinks = () => {
           target="_blank"
           className="flex flex-row items-center"
         >
-          <AiFillFileText
-            className="text-[var(--primary)] hover:text-[var(--secondary)]"
-            size={25}
-          />
+          <AiFillFileText className="h-6 w-6 text-[var(--primary)] hover:text-[var(--secondary)] md:h-7 md:w-7" />
         </Link>
         <div className="hidden h-0.5 w-16 rounded-sm bg-[var(--secondary)] md:block"></div>
       </div>
