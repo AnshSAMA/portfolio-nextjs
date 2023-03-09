@@ -34,7 +34,7 @@ export default function Hero({}: Props) {
       <h1 className="z-10 text-xl font-medium text-[var(--primary)] md:text-4xl">
         <TypeWriterText typewriterWords={typewriterWords} />
       </h1>
-      <Navbar active="" />
+      <Navbar homepage />
     </motion.div>
   )
 }

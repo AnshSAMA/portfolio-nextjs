@@ -1,7 +1,7 @@
 import Navbar from '../navbar'
 
 export const metadata = {
-  title: 'Contact Info',
+  title: 'Work & Study',
 }
 
 export default function RootLayout({

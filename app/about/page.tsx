@@ -15,12 +15,11 @@ type Props = {}
 export default function About({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: [0, 0, 0, 0, 0.2, 0.4, 1] }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: [0, 0, 0, 0, 0.2, 0.4, 1], y: 0 }}
+      transition={{ duration: 0.3 }}
       className="flex flex-col gap-12"
     >
-      <Navbar active="about" />
       <div className="relative flex flex-col-reverse items-center justify-evenly gap-y-12 md:flex-row">
         <div className="flex max-w-md flex-col items-center gap-y-3 px-10 md:max-w-sm md:items-start md:px-0">
           <div className="w-fit text-lg font-light text-[var(--secondary)]">

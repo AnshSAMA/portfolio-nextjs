@@ -1,10 +1,11 @@
 import React from 'react'
 import ExperienceCard from './ExperienceCard'
 import ACUImage from './acu.png'
+import Navbar from '../navbar'
 
 type Props = {}
 
-export default function WorkExperience({}: Props) {
+export function WorkExperience({}: Props) {
   return (
     <div
       className="relative mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-evenly
@@ -40,6 +41,39 @@ export default function WorkExperience({}: Props) {
           endDate="Present"
         />
       </div>
+    </div>
+  )
+}
+type TimelineDotProps = {
+  direction: 'left' | 'right'
+  content: JSX.Element
+}
+const TimelineDot = ({ direction, content }: TimelineDotProps) => {
+  return (
+    <div
+      className={`left col-start-2 col-end-3 grid grid-cols-2 ${
+        direction === 'right' ? 'justify-items-start' : 'justify-items-end'
+      }`}
+    >
+      <div
+        className={`flex items-center justify-center gap-3 ${
+          direction === 'right' ? 'flex-row' : 'flex-row-reverse'
+        }`}
+      >
+        <div>•</div>
+        <div className="h-0.5 w-16 bg-[var(--secondary)]"></div>
+        <div>{content}</div>
+      </div>
+      <div className={`${direction === 'right' ? 'row-start-1' : ''}`}></div>
+    </div>
+  )
+}
+
+export default function WorkStudy({}: Props) {
+  const cont = <div>Present</div>
+  return (
+    <div>
+      <TimelineDot content={cont} direction="left" />
     </div>
   )
 }

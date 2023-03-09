@@ -108,12 +108,11 @@ const Contacts = () => {
 export default function Contact({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: [0, 0, 0, 0, 0.2, 0.4, 1] }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: [0, 0, 0, 0, 0.2, 0.4, 1], y: 0 }}
+      transition={{ duration: 0.3 }}
       className="min-h-screen"
     >
-      <Navbar active="contact" />
       <div className="mx-auto mt-4 flex h-full max-w-7xl flex-col items-center justify-center text-center">
         <div className="flex w-full flex-col items-center justify-center gap-6">
           <div className="py-2">
