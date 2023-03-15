@@ -2,6 +2,7 @@ import React from 'react'
 import ExperienceCard from './ExperienceCard'
 import ACUImage from '/public/acu.png'
 import LiberoImage from '/public/libero.png'
+import UQImage from '/public/uq-logo.jpeg'
 
 type Props = {}
 
@@ -58,12 +59,25 @@ export default function WorkStudy({}: Props) {
         endDate="July, 2022"
         image={LiberoImage}
         description={[
-          'Developed and maintained code for in-house and client websites using TypeScript/JavaScript, React, Caché & other supporting tools. ',
+          'Developed and maintained code for in-house and client websites using TypeScript/JavaScript, React, Caché & other supporting tools.',
           'Worked on a range of projects across different technologies, collaborating with supporting teams, programmers and clients to identify and resolve issues, implement feature requests, utilize APIs, and provide support for a variety of tech issues.',
           'Readily learned new programming languages, refactored old code to modern, performant and robust code, designed & developed new functionalities.',
         ]}
       />
       <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
+      {/* <ExperienceCard
+        position="Bachelor of Information Technology"
+        companyName="University of Queensland"
+        startDate="Feb, 2018"
+        endDate="Feb, 2021"
+        image={UQImage}
+        description={[
+          'Studied Bachelor of Information Technology with UX Design as my major.',
+          'Learned and worked through a range of projects w.',
+          'Studied Bachelor of Information Technology with UX Design as my major.',
+        ]}
+      />
+      <div className="h-32 w-0.5 bg-[var(--secondary)]"></div> */}
       <TimelineDot content={end} direction="left" />
     </div>
   )
