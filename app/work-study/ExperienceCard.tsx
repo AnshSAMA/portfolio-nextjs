@@ -7,6 +7,7 @@ type Props = {
   startDate: string
   endDate: string
   image: StaticImageData
+  description: string[]
 }
 
 export default function ExperienceCard({
@@ -15,47 +16,26 @@ export default function ExperienceCard({
   startDate,
   endDate,
   image,
+  description,
 }: Props) {
   return (
-    <article
-      className="flex flex-col rounded-lg items-center space-y-6 flex-shrink-0 
-    w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#160F2E] p-10 opacity-40 hover:opacity-100
-    cursor-pointer transition-opacity duration-200 overflow-hidden"
-    >
+    <article className="flex w-5/6 cursor-pointer flex-col items-center justify-center space-y-2 overflow-hidden rounded-md bg-[#000] py-6 md:w-1/2">
       <Image
         src={image}
         alt={`${companyName} Logo`}
-        className="h-28 w-28 rounded-full object-cover object-center xl:w-[200px] xl:h-[200px]"
+        className="h-28 w-28 rounded-full object-cover object-center"
       />
-      <div className="space-y-1">
-        <h4 className="text-2xl font-light">{position}</h4>
-        <h6 className="text-base font-bold">{companyName}</h6>
-        <div className="flex space-x-2 py-2">
-          <Image
-            src={image}
-            alt="skills logo"
-            className="h-10 w-10 rounded-full"
-          />
-          <Image
-            src={image}
-            alt="skills logo"
-            className="h-10 w-10 rounded-full"
-          />
-          <Image
-            src={image}
-            alt="skills logo"
-            className="h-10 w-10 rounded-full"
-          />
-        </div>
-        <p className="uppercase text-gray-300">
+      <div className="flex flex-col items-center justify-center space-y-1">
+        <h4 className="text-base font-medium md:text-xl">{companyName}</h4>
+        <h6 className="text-base font-medium md:text-lg">{position}</h6>
+        <p className="text-sm uppercase text-gray-300 md:text-base">
           {startDate} - {endDate}
         </p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>lalala</li>
-          <li>lalala</li>
-          <li>lalala</li>
-          <li>lalala</li>
-        </ul>
+        <div className="w-4/5 space-y-2 text-justify text-xs md:w-96 md:text-left md:text-base">
+          {description.map((point) => (
+            <div key={point}>• {point}</div>
+          ))}
+        </div>
       </div>
     </article>
   )
