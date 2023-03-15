@@ -32,7 +32,7 @@ const ContactLinks = () => {
         {/* Resume Document */}
         <Link
           title="Resume"
-          href="/Anshy's Resume.pdf"
+          href="https://docs.google.com/document/d/1--oidksjYFGjatbGSes6bbFAHZOENlQh/edit?usp=sharing&ouid=104729262307302321972&rtpof=true&sd=true"
           target="_blank"
           className="flex flex-row items-center"
         >

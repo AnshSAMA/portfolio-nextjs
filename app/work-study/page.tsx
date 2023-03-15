@@ -65,19 +65,6 @@ export default function WorkStudy({}: Props) {
         ]}
       />
       <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
-      {/* <ExperienceCard
-        position="Bachelor of Information Technology"
-        companyName="University of Queensland"
-        startDate="Feb, 2018"
-        endDate="Feb, 2021"
-        image={UQImage}
-        description={[
-          'Studied Bachelor of Information Technology with UX Design as my major.',
-          'Learned and worked through a range of projects w.',
-          'Studied Bachelor of Information Technology with UX Design as my major.',
-        ]}
-      />
-      <div className="h-32 w-0.5 bg-[var(--secondary)]"></div> */}
       <TimelineDot content={end} direction="left" />
     </div>
   )
