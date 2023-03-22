@@ -19,7 +19,7 @@ export default function ExperienceCard({
   description,
 }: Props) {
   return (
-    <article className="flex w-5/6 cursor-pointer flex-col items-center justify-center space-y-2 overflow-hidden rounded-md bg-[#000] py-6 shadow-sm shadow-[var(--secondary)] md:w-2/3 md:flex-row md:justify-evenly">
+    <article className="flex w-5/6 cursor-pointer flex-col items-center justify-center space-y-2 overflow-hidden rounded-sm bg-[#000] py-12 shadow shadow-[var(--secondary)] md:w-2/3 md:flex-row md:justify-evenly">
       <div className="flex flex-col items-center justify-center space-y-2 text-center">
         <Image
           src={image}

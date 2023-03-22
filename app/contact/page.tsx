@@ -64,8 +64,8 @@ const ContactForm = () => {
 const Contacts = () => {
   return (
     <div className="flex w-full flex-row items-center justify-center">
-      <div className="h-0.5 w-32 rounded-sm bg-[var(--primary)]"></div>
-      <div className="flex flex-row items-center gap-x-4 rounded-sm border-2 border-[var(--primary)] p-4">
+      <div className="h-0.5 w-32 rounded-sm bg-[var(--secondary)]"></div>
+      <div className="flex flex-row items-center gap-x-4 rounded-sm border-2 border-[var(--secondary)] p-3">
         {/* LinkedIn */}
         <Link
           title="Linkedin"
@@ -76,23 +76,14 @@ const Contacts = () => {
         </Link>
 
         {/* Github */}
-        <Link
+        {/* <Link
           title="Github"
           href="https://github.com/AnshSAMA?tab=repositories"
           target="_blank"
         >
           <AiOutlineGithub className="h-6 w-6 text-[var(--primary)] hover:text-[var(--secondary)] md:h-7 md:w-7" />
-        </Link>
+        </Link> */}
 
-        {/* Resume Document */}
-        <Link
-          title="Resume"
-          href="/Anshy's Resume.pdf"
-          target="_blank"
-          className="flex flex-row items-center"
-        >
-          <AiFillFileText className="h-6 w-6 text-[var(--primary)] hover:text-[var(--secondary)] md:h-7 md:w-7" />
-        </Link>
         <Link
           href="mailto:mander.anshuman@gmail.com"
           className="text-xs font-thin hover:text-[var(--secondary)] md:text-sm"
@@ -100,7 +91,7 @@ const Contacts = () => {
           mander.anshuman@gmail.com
         </Link>
       </div>
-      <div className="h-0.5 w-32 rounded-sm bg-[var(--primary)]"></div>
+      <div className="h-0.5 w-32 rounded-sm bg-[var(--secondary)]"></div>
     </div>
   )
 }
@@ -115,17 +106,17 @@ export default function Contact({}: Props) {
     >
       <div className="mx-auto mt-4 flex h-full max-w-7xl flex-col items-center justify-center text-center">
         <div className="flex w-full flex-col items-center justify-center gap-6">
-          <div className="py-2">
-            <h4 className="text-center text-base text-[var(--primary)]  md:text-3xl">
-              Wanna get in touch with me?
+          <div className="py-1">
+            <h4 className="text-center text-base text-[var(--primary)]  md:text-2xl">
+              Want to get in touch with me?
             </h4>
             <div className="h-0.5 w-full rounded-sm bg-[var(--secondary)]"></div>
           </div>
-          <h6 className="text-center text-sm text-[var(--primary)]  md:text-lg">
-            Feel free to reach out at any of these socials
+          <h6 className="text-center text-sm text-[var(--primary)]  md:text-base">
+            Feel free to reach out at any of these
           </h6>
           <Contacts />
-          <h4 className="text-center text-sm text-[var(--primary)]  md:text-lg">
+          <h4 className="text-center text-sm text-[var(--primary)]  md:text-base">
             Or shoot me a quick message right here!
           </h4>
           <ContactForm />

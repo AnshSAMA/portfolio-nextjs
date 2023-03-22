@@ -11,7 +11,7 @@ export default function Skills({}: Props) {
         <h2 className="text-center text-2xl text-[var(--primary)]">
           What I Know
         </h2>
-        <div className="h-0.5 w-full bg-[var(--primary)]"></div>
+        <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
       </div>
       <div className="grid grid-cols-2 gap-4 text-xs md:grid-cols-4 md:flex-row md:gap-12 md:text-sm">
         <div className="flex max-w-xs flex-col gap-y-2 divide-[var(--secondary)] rounded-sm p-3">

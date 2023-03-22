@@ -34,6 +34,7 @@ const TimelineDot = ({ direction, content }: TimelineDotProps) => {
 export default function WorkStudy({}: Props) {
   const current = <div>Present</div>
   const end = <div>End</div>
+  const underlineDiv = (text: string) => <div className="underline">{text}</div>
 
   return (
     <div className="flex flex-col items-center gap-y-2">
@@ -46,9 +47,9 @@ export default function WorkStudy({}: Props) {
         endDate="Current"
         image={ACUImage}
         description={[
-          'Engineered and shipped highly interactive web apps utilizing JavaScript, Angular & ServiceNow as university’s primary platform for enterprise service management.',
-          'Administered and implemented new applications to ServiceNow, proposed and standardized new development processes for improved security, manageability, performance, and service experience.',
-          'Worked closely with business analysts, project managers and relevant stakeholders to devise and document new feature changes.',
+          `Built highly interactive web apps utilizing JavaScript, Angular & ServiceNow`,
+          'Implemented new modules and complex forms in ServiceNow to improve service experience',
+          'Worked closely with business analysts, project managers and other relevant stakeholders',
         ]}
       />
       <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
@@ -59,9 +60,22 @@ export default function WorkStudy({}: Props) {
         endDate="July, 2022"
         image={LiberoImage}
         description={[
-          'Developed and maintained code for in-house and client websites using TypeScript/JavaScript, React, Caché & other supporting tools.',
-          'Worked on a range of projects across different technologies, collaborating with supporting teams, programmers and clients to identify and resolve issues, implement feature requests, utilize APIs, and provide support for a variety of tech issues.',
-          'Readily learned new programming languages, refactored old code to modern, performant and robust code, designed & developed new functionalities.',
+          'Developed and maintained code using TypeScript/JavaScript, React, Caché & other supporting tools',
+          'Worked on a range of projects, using full-stack to resolve user issues & implement feature requests',
+          'Readily refactored old code to modern, performant and robust code',
+        ]}
+      />
+      <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
+      <ExperienceCard
+        position="University of Queensland"
+        companyName="Bachelor of Information Technology"
+        startDate="Feb, 2018"
+        endDate="Feb, 2021"
+        image={UQImage}
+        description={[
+          'Major: User Experience Design',
+          'Gained technical mastery over JavaScript, CSS, HTML, Python, Java, C programming, C# & SQL',
+          'Used various design and prototyping tools such as Figma, Adobe Illustrator / XD / InDesign, InVision Studio & Arduino',
         ]}
       />
       <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
