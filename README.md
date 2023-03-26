@@ -1,6 +1,6 @@
 ### Intro
 
-Personal portfolio website developed using NextJS, TailwindCSS, Framer Motion.
+Personal portfolio website developed using NextJS, TailwindCSS and Framer Motion.
 
 ### Inspos
 
