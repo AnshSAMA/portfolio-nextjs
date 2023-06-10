@@ -29,6 +29,7 @@ export default function Hero({}: Props) {
       />
       <MagicalText
         text="Software Engineer"
+        stars={true}
         className="text-md z-10 font-semibold uppercase tracking-[4px] text-[var(--primary)] md:tracking-[8px]"
       />
       <h1 className="z-10 text-xl font-medium text-[var(--primary)] md:text-4xl">

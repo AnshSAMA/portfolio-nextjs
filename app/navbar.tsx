@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
 import { usePathname } from 'next/navigation'
+import { SignedIn, UserButton } from '@clerk/nextjs'
 
 type Props = { homepage?: true }
 
@@ -13,11 +14,12 @@ export default function Navbar({ homepage }: Props) {
     { title: 'about', href: '/about' },
     { title: 'work/study', href: '/work-study' },
     { title: 'contact', href: '/contact' },
+    { title: 'experiments', href: '/experiments' },
   ]
 
   // Don't show navbar on top for homepage
   const pathname = usePathname()
-  if (!homepage && (pathname === '/' || pathname === '/home')) return null
+  if (!homepage && pathname === '/') return null
 
   return (
     <motion.nav
@@ -25,7 +27,7 @@ export default function Navbar({ homepage }: Props) {
       initial={pathname === '/' ? { opacity: 0 } : {}}
       animate={pathname === '/' ? { opacity: [0, 0, 0, 0, 0, 0.2, 1] } : {}}
       transition={{ duration: 0.3 }}
-      className={`z-20 flex w-full justify-center gap-x-3 rounded-b-md py-8 ${
+      className={`z-20 mx-auto flex w-4/5  flex-wrap items-center justify-center gap-x-3 rounded-b-md py-8 ${
         homepage ? '' : 'bg-[var(--background)]'
       }`}
     >
@@ -46,6 +48,9 @@ export default function Navbar({ homepage }: Props) {
           {link.title}
         </Link>
       ))}
+      <SignedIn>
+        <UserButton afterSignOutUrl={pathname} />
+      </SignedIn>
     </motion.nav>
   )
 }
