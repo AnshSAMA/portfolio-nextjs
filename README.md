@@ -1,6 +1,13 @@
 ### Intro
 
-Personal portfolio website developed using NextJS, TailwindCSS and Framer Motion.
+Personal portfolio website developed using 
+- React Framework: NextJS
+- Styling: TailwindCSS
+- Animations: Framer Motion
+- ORM: Prisma
+- Auth: clerk.dev
+- DB: PlanetScale
+- Forms: react-hook-form
 
 ### Inspos
 
