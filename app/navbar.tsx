@@ -14,7 +14,7 @@ export default function Navbar({ homepage }: Props) {
     { title: 'about', href: '/about' },
     { title: 'work/study', href: '/work-study' },
     { title: 'contact', href: '/contact' },
-    { title: 'experiments', href: '/experiments' },
+    //{ title: 'experiments', href: '/experiments' },
   ]
 
   // Don't show navbar on top for homepage
