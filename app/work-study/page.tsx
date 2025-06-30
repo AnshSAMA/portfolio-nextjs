@@ -3,6 +3,8 @@ import ExperienceCard from './ExperienceCard'
 import ACUImage from '/public/acu.png'
 import LiberoImage from '/public/libero.png'
 import UQImage from '/public/uq-logo.jpeg'
+import AC3Image from '/public/AC3.png'
+import OneStepGroupImage from '/public/OneStepGroup.png'
 
 type Props = {}
 
@@ -42,10 +44,10 @@ export default function WorkStudy({}: Props) {
       <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
       <ExperienceCard
         position="ServiceNow Product Owner"
-        companyName="AC3 Pty Ltd."
+        companyName="OneStep Group"
         startDate="January 2025"
         endDate="Current"
-        image={ACUImage}
+        image={OneStepGroupImage}
         description={[
           `Acted as a key decision-maker, ensuring that ServiceNow solutions align with business goals and deliver tangible value.`,
           'Work closely with cross-functional teams, including executives, developers, and administrators, to translate business needs into technical solutions.',
@@ -60,7 +62,7 @@ export default function WorkStudy({}: Props) {
         companyName="AC3 Pty Ltd."
         startDate="August 2023"
         endDate="January 2025"
-        image={ACUImage}
+        image={AC3Image}
         description={[
           `Collaborated with diverse clients, including VicRoads, NSW Department of Planning & Environment, and TAL Insurance, to deliver tailored ServiceNow implementations`,
           'Championed ServiceNow across teams, driving requirements, solution design, and high-quality implementations to streamline business processes.',
