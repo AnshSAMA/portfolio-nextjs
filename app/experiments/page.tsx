@@ -5,6 +5,7 @@ import { getComments } from '../comments'
 import LoginComment from './LoginComment'
 
 type Props = {}
+/*
 export default async function page({}: Props) {
   // await prisma.comment.deleteMany()
   // await prisma.user.deleteMany()
@@ -46,3 +47,4 @@ export default async function page({}: Props) {
     </div>
   )
 }
+*/
