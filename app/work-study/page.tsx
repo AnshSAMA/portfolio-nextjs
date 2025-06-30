@@ -41,10 +41,40 @@ export default function WorkStudy({}: Props) {
       <TimelineDot content={current} direction="right" />
       <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
       <ExperienceCard
-        position="Software Engineer"
-        companyName="Australian Catholic University"
-        startDate="July, 26 2022"
+        position="ServiceNow Product Owner"
+        companyName="AC3 Pty Ltd."
+        startDate="January 2025"
         endDate="Current"
+        image={ACUImage}
+        description={[
+          `Acted as a key decision-maker, ensuring that ServiceNow solutions align with business goals and deliver tangible value.`,
+          'Work closely with cross-functional teams, including executives, developers, and administrators, to translate business needs into technical solutions.',
+          'Oversee ServiceNow module implementations, upgrades, and enhancements across the platform to optimize workflows and automation.',
+        ]}
+      />
+    <div className="flex flex-col items-center gap-y-2">
+      <TimelineDot content={current} direction="right" />
+      <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
+      <ExperienceCard
+        position="ServiceNow Administrator"
+        companyName="AC3 Pty Ltd."
+        startDate="August 2023"
+        endDate="January 2025"
+        image={ACUImage}
+        description={[
+          `Collaborated with diverse clients, including VicRoads, NSW Department of Planning & Environment, and TAL Insurance, to deliver tailored ServiceNow implementations`,
+          'Championed ServiceNow across teams, driving requirements, solution design, and high-quality implementations to streamline business processes.',
+          'Delivered enhancements across modules, led upgrades, and supported users to boost functionality, drive adoption, and maintain high satisfaction.',
+        ]}
+      />
+    <div className="flex flex-col items-center gap-y-2">
+      <TimelineDot content={current} direction="right" />
+      <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
+      <ExperienceCard
+        position="ServiceNow Developer"
+        companyName="Australian Catholic University"
+        startDate="July 2022"
+        endDate="August 2023"
         image={ACUImage}
         description={[
           `Built highly interactive web apps utilizing JavaScript, Angular & ServiceNow`,
