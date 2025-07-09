@@ -14,6 +14,7 @@ import { createComment } from '../comments'
 type Props = {}
 
 export default function LoginComment({}: Props) {
+  return null;
   const formRef = useRef<HTMLFormElement>(null)
   const user = useUser().user
   async function comment(formData: FormData) {

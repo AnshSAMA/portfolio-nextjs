@@ -22,8 +22,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body
-          className={`${bodyfont.variable} bg-[var(--background)] font-serif text-[var(--primary)] 
+        <body className={`${bodyfont.variable} bg-[var(--background)] font-serif text-[var(--primary)] 
         overflow-x-hidden scrollbar-thin scrollbar-track-[#111010]/20 scrollbar-thumb-[#fe5d26]`}
         >
           <Navbar />

@@ -5,12 +5,11 @@ import { getComments } from '../comments'
 import LoginComment from './LoginComment'
 
 type Props = {}
-/*
 export default async function page({}: Props) {
+  return null;
   // await prisma.comment.deleteMany()
   // await prisma.user.deleteMany()
   const comments = await getComments()
-
   return (
     <div className="mx-auto flex w-4/5 flex-col items-center gap-y-3 rounded bg-black p-8">
       <Suspense fallback={<p>getting comments ...</p>}>
@@ -47,4 +46,4 @@ export default async function page({}: Props) {
     </div>
   )
 }
-*/
+

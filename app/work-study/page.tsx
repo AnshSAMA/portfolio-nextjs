@@ -54,8 +54,6 @@ export default function WorkStudy({}: Props) {
           'Oversee ServiceNow module implementations, upgrades, and enhancements across the platform to optimize workflows and automation.',
         ]}
       />
-    <div className="flex flex-col items-center gap-y-2">
-      <TimelineDot content={current} direction="right" />
       <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
       <ExperienceCard
         position="ServiceNow Administrator"
@@ -69,8 +67,6 @@ export default function WorkStudy({}: Props) {
           'Delivered enhancements across modules, led upgrades, and supported users to boost functionality, drive adoption, and maintain high satisfaction.',
         ]}
       />
-    <div className="flex flex-col items-center gap-y-2">
-      <TimelineDot content={current} direction="right" />
       <div className="h-32 w-0.5 bg-[var(--secondary)]"></div>
       <ExperienceCard
         position="ServiceNow Developer"
