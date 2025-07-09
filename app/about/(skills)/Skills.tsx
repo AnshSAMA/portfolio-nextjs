@@ -13,21 +13,29 @@ export default function Skills({}: Props) {
         </h2>
         <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
       </div>
-      <div className="grid grid-cols-2 gap-4 text-xs md:grid-cols-4 md:flex-row md:gap-12 md:text-sm">
+      <div className="grid grid-cols-2 gap-4 text-xs md:grid-cols-3 md:flex-row md:gap-12 md:text-sm">
         <div className="flex max-w-xs flex-col gap-y-2 divide-[var(--secondary)] rounded-sm p-3">
-          <h4>Front-End</h4>
+          <h4>ServiceNow & Relevant Certs</h4>
+          <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
+          <ol>
+            <li>- CTA (Sep 2025)</li>
+            <li>- CSA</li>
+            <li>- CAD</li>
+            <li>- CIS ITSM</li>
+            <li>- CIS CSM</li>
+            <li>- CIS HRSD</li>
+            <li>- CIS Discovery</li>
+            <li>- ITIL v4</li>
+          </ol>
+        </div>
+        <div className="flex max-w-xs flex-col gap-y-2 divide-[var(--secondary)] rounded-sm p-3">
+          <h4>Web Development & Backend</h4>
           <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
           <ol>
             <li>- NextJS/ReactJS</li>
             <li>- tailwindcss</li>
             <li>- (S)CSS</li>
             <li>- HTML</li>
-          </ol>
-        </div>
-        <div className="flex max-w-xs flex-col  gap-y-2 divide-[var(--secondary)] rounded-sm p-3">
-          <h4>Back-End</h4>
-          <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
-          <ol>
             <li>- TypeScript/JavaScript</li>
             <li>- Python</li>
             <li>- C/C#</li>
@@ -35,25 +43,20 @@ export default function Skills({}: Props) {
           </ol>
         </div>
         <div className="flex max-w-xs flex-col gap-y-2 divide-[var(--secondary)] rounded-sm p-3">
-          <h4>Design</h4>
+          <h4>Design & Misc</h4>
           <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
           <ol>
             <li>- Figma</li>
             <li>- Adobe Illustrator</li>
             <li>- Adobe XD/InDesign</li>
             <li>- InVision Studio</li>
-          </ol>
-        </div>
-        <div className="flex max-w-xs flex-col gap-y-2 divide-[var(--secondary)] rounded-sm p-3">
-          <h4>Misc</h4>
-          <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
-          <ol>
             <li>- NodeJS, Git, Unix Shell</li>
             <li>- Unity</li>
             <li>- Arduino</li>
             <li>- MATLAB</li>
           </ol>
         </div>
+
       </div>
     </div>
   )

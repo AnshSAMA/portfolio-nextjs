@@ -32,9 +32,9 @@ export default function About({}: Props) {
             <div className="h-0.5 bg-[var(--secondary)]"></div>
           </div>
           <p className="text-justify text-sm md:text-left">
-            Hi I&apos;m Anshuman, software engineer by profession and technology
-            enthusiast by passion. I&apos;m usually engaged in web development
-            trying new dev tools
+            Hi I&apos;m Anshuman, ServiceNow resident by profession and technology
+            enthusiast by passion. I specialize in building scalable solutions on the 
+            Now Platform and love exploring new tools that make workflows smarter and teams faster.
           </p>
           <p className="text-justify text-sm md:text-left">
             When I&apos;m not coding, you can find me trying new cafe&apos;s,

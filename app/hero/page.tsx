@@ -13,8 +13,8 @@ import { motion } from 'framer-motion'
 type Props = {}
 const typewriterWords = [
   `Hi, call me Anshy!`,
-  'Or-the-programming-jedi.tsx ⚔️',
-  '<ImJustAProblemSolvingHero 🦸‍♂️ />',
+  '<SolvingBusinessProblemsOneFlowAtATime ⚔️ />',
+  '// Bridging strategy & tech as your go-to SNOW Jedi ❄️',
 ]
 
 export default function Hero({}: Props) {
@@ -28,7 +28,7 @@ export default function Hero({}: Props) {
         style={{ objectFit: 'contain' }}
       />
       <MagicalText
-        text="Software Engineer"
+        text="ServiceNow Product Owner"
         stars={true}
         className="text-md z-10 font-semibold uppercase tracking-[4px] text-[var(--primary)] md:tracking-[8px]"
       />
