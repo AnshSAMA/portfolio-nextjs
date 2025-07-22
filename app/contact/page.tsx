@@ -113,13 +113,13 @@ export default function Contact({}: Props) {
             <div className="h-0.5 w-full rounded-sm bg-[var(--secondary)]"></div>
           </div>
           <h6 className="text-center text-sm text-[var(--primary)]  md:text-base">
-            Feel free to reach out at any of these
+            Feel free to reach out at
           </h6>
           <Contacts />
-          <h4 className="text-center text-sm text-[var(--primary)]  md:text-base">
+          {/* <h4 className="text-center text-sm text-[var(--primary)]  md:text-base">
             Or shoot me a quick message right here!
           </h4>
-          <ContactForm />
+          <ContactForm /> */}
         </div>
       </div>
     </motion.div>

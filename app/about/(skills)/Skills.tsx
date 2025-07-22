@@ -18,12 +18,13 @@ export default function Skills({}: Props) {
           <h4>ServiceNow & Relevant Certs</h4>
           <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
           <ol>
-            <li>- CTA (Sep 2025)</li>
+            <li>- CTA (Upcoming, Sep 2025)</li>
             <li>- CSA</li>
             <li>- CAD</li>
             <li>- CIS ITSM</li>
             <li>- CIS CSM</li>
             <li>- CIS HRSD</li>
+            <li>- CIS SPM</li>
             <li>- CIS Discovery</li>
             <li>- ITIL v4</li>
           </ol>
@@ -38,7 +39,8 @@ export default function Skills({}: Props) {
             <li>- HTML</li>
             <li>- TypeScript/JavaScript</li>
             <li>- Python</li>
-            <li>- C/C#</li>
+            <li>- C</li>
+            <li>- C#</li>
             <li>- SQL</li>
           </ol>
         </div>
@@ -48,7 +50,8 @@ export default function Skills({}: Props) {
           <ol>
             <li>- Figma</li>
             <li>- Adobe Illustrator</li>
-            <li>- Adobe XD/InDesign</li>
+            <li>- Adobe XD</li>
+            <li>- Adobe InDesign</li>
             <li>- InVision Studio</li>
             <li>- NodeJS, Git, Unix Shell</li>
             <li>- Unity</li>
@@ -56,7 +59,6 @@ export default function Skills({}: Props) {
             <li>- MATLAB</li>
           </ol>
         </div>
-
       </div>
     </div>
   )

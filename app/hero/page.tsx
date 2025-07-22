@@ -14,7 +14,7 @@ type Props = {}
 const typewriterWords = [
   `Hi, call me Anshy!`,
   '<SolvingBusinessProblemsOneFlowAtATime ⚔️ />',
-  '// Bridging strategy & tech as your go-to SNOW Jedi ❄️',
+  '// Bridging strategy & tech as SNOW Jedi ❄️',
 ]
 
 export default function Hero({}: Props) {
