@@ -13,8 +13,8 @@ import { motion } from 'framer-motion'
 type Props = {}
 const typewriterWords = [
   `Hi, call me Anshy!`,
-  '<SolvingBusinessProblemsOneFlowAtATime ⚔️ />',
-  '// Bridging strategy & tech as SNOW Jedi ❄️',
+  `// Or the ServiceNow Sensei 🥋`,
+  `<SolvingBusinessProblemsOneFlowAtATime ⚔️ />`,
 ]
 
 export default function Hero({}: Props) {

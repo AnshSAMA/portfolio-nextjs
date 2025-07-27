@@ -18,29 +18,29 @@ export default function Skills({}: Props) {
           <h4>ServiceNow & Relevant Certs</h4>
           <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
           <ol>
-            <li>- CTA (Upcoming, Sep 2025)</li>
+            <li>- ITIL 4 Foundation</li>
             <li>- CSA</li>
             <li>- CAD</li>
             <li>- CIS ITSM</li>
-            <li>- CIS CSM</li>
             <li>- CIS HRSD</li>
+            <li>- CIS CSM</li>
             <li>- CIS SPM</li>
             <li>- CIS Discovery</li>
-            <li>- ITIL v4</li>
+            <li>- CTA (Upcoming, Sep 2025)</li>
           </ol>
         </div>
         <div className="flex max-w-xs flex-col gap-y-2 divide-[var(--secondary)] rounded-sm p-3">
           <h4>Web Development & Backend</h4>
           <div className="h-0.5 w-full bg-[var(--secondary)]"></div>
           <ol>
-            <li>- NextJS/ReactJS</li>
-            <li>- tailwindcss</li>
+            <li>- JavaScript/TypeScript</li>
+            <li>- Next.js/ReactJS</li>
             <li>- (S)CSS</li>
+            <li>- TailwindCSS</li>
             <li>- HTML</li>
-            <li>- TypeScript/JavaScript</li>
             <li>- Python</li>
+            <li>- Java</li>
             <li>- C</li>
-            <li>- C#</li>
             <li>- SQL</li>
           </ol>
         </div>
