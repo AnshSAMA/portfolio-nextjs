@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
 import { usePathname } from 'next/navigation'
-import { SignedIn, UserButton } from '@clerk/nextjs'
 
 type Props = { homepage?: true }
 
@@ -48,9 +47,6 @@ export default function Navbar({ homepage }: Props) {
           {link.title}
         </Link>
       ))}
-      <SignedIn>
-        <UserButton afterSignOutUrl={pathname} />
-      </SignedIn>
     </motion.nav>
   )
 }
