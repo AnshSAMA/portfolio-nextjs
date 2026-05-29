@@ -1,16 +1,16 @@
 import React from 'react'
 import ExperienceCard from './ExperienceCard'
-import ACUImage from '/public/acu.png'
-import LiberoImage from '/public/libero.png'
-import UQImage from '/public/uq-logo.jpeg'
-import AC3Image from '/public/AC3.png'
-import OneStepGroupImage from '/public/OneStepGroup.png'
+import ACUImage from '../../public/acu.png'
+import LiberoImage from '../../public/libero.png'
+import UQImage from '../../public/uq-logo.jpeg'
+import AC3Image from '../../public/AC3.png'
+import OneStepGroupImage from '../../public/OneStepGroup.png'
 
 type Props = {}
 
 type TimelineDotProps = {
   direction: 'left' | 'right'
-  content: JSX.Element
+  content: React.ReactNode
 }
 const TimelineDot = ({ direction, content }: TimelineDotProps) => {
   return (

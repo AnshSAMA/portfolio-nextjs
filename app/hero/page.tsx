@@ -3,7 +3,7 @@
 import React from 'react'
 import BackgroundCircles from './BackgroundCircles'
 import Image from 'next/image'
-import HeroImg from '/public/hero-img.jpg'
+import HeroImg from '../../public/hero-img.jpg'
 
 import TypeWriterText from './TypeWriterText'
 import Navbar from '../navbar'
@@ -25,6 +25,7 @@ export default function Hero({}: Props) {
         className="mx-auto h-28 w-28 rounded-full object-cover"
         src={HeroImg}
         alt="Hero Image"
+        priority
         style={{ objectFit: 'contain' }}
       />
       <MagicalText

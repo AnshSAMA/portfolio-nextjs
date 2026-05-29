@@ -3,9 +3,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-import AboutImgOne from '/public/about-1.jpg'
-import AboutImgTwo from '/public/about-2.jpg'
-import AboutImgThree from '/public/about-3.jpg'
+import AboutImgOne from '../../public/about-1.jpg'
+import AboutImgTwo from '../../public/about-2.jpg'
+import AboutImgThree from '../../public/about-3.jpg'
 import Skills from './(skills)/Skills'
 import { motion } from 'framer-motion'
 

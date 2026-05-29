@@ -1,23 +1,33 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 type Props = { interval: number }
 
 const rand = (min: number, max: number) =>
   Math.floor(Math.random() * (max - min + 1)) + min
 
 export default function MagicStar({ interval }: Props) {
-  const [changePosition, setChangePosition] = useState(true)
+  const [position, setPosition] = useState({ left: 0, top: 0 })
 
-  setTimeout(() => {
-    setChangePosition(!changePosition)
-  }, interval)
+  useEffect(() => {
+    const updatePosition = () => {
+      setPosition({
+        left: rand(-10, 100),
+        top: rand(-40, 80),
+      })
+    }
+
+    updatePosition()
+    const timeout = window.setInterval(updatePosition, interval)
+
+    return () => window.clearInterval(timeout)
+  }, [interval])
 
   return (
     <span
       className="magic-star"
       style={{
-        left: `${rand(-10, 100)}%`,
-        top: `${rand(-40, 80)}%`,
+        left: `${position.left}%`,
+        top: `${position.top}%`,
       }}
     >
       <svg viewBox="0 0 512 512">
