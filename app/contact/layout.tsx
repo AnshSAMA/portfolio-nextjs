@@ -1,5 +1,3 @@
-import Navbar from '../navbar'
-
 export const metadata = {
   title: 'Contact Info',
 }
